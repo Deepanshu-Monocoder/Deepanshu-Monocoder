@@ -21,11 +21,12 @@ uptime = f"{age.years}y {age.months}m {age.days}d"
 BACKGROUND = "#0d1117"
 TEXT = "#c9d1d9"
 GREEN = "#3fb950"
-ORANGE = "#58a6ff"
+BLUE = "#58a6ff"
 
-FONT_SIZE = 20
-LINE_HEIGHT = 31
-width="680"
+FONT_SIZE = 19
+LINE_HEIGHT = 30
+
+SVG_WIDTH = 560
 
 # ----------------------------------------------------
 # Data
@@ -52,10 +53,10 @@ rows = [
 # Build SVG
 # ----------------------------------------------------
 
-height = 110 + len(rows) * LINE_HEIGHT
+height = 105 + len(rows) * LINE_HEIGHT
 
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg"
-width="760"
+width="{SVG_WIDTH}"
 height="{height}">
 
 <rect width="100%" height="100%" fill="{BACKGROUND}"/>
@@ -73,24 +74,24 @@ text {{
 }}
 
 .label {{
-    fill:{ORANGE};
+    fill:{BLUE};
     font-weight:bold;
 }}
 </style>
 
 <text x="20" y="35" class="username">Deepanshu-Monocoder@github</text>
-<text x="20" y="60">────────────────────────────────────────────────────────────────────────────</text>
+<text x="20" y="60">──────────────────────────────────────────────────────</text>
 """
 
-y = 80
+y = 82
 
 for label, value in rows:
 
     if label == "":
-        svg += f'<text x="295" y="{y}">{value}</text>\n'
+        svg += f'<text x="235" y="{y}">{value}</text>\n'
 
     else:
-        dots = "." * max(2, 24 - len(label))
+        dots = "." * max(2, 22 - len(label))
 
         svg += (
             f'<text x="20" y="{y}">'

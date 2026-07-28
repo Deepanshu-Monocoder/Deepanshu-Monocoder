@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-width="760"
-height="544">
+width="560"
+height="525">
 
 <rect width="100%" height="100%" fill="#0d1117"/>
 
 <style>
 text {
     font-family: monospace;
-    font-size:20px;
+    font-size:19px;
     fill:#c9d1d9;
 }
 
@@ -23,19 +23,19 @@ text {
 </style>
 
 <text x="20" y="35" class="username">Deepanshu-Monocoder@github</text>
-<text x="20" y="60">────────────────────────────────────────────────────────────────────────────</text>
-<text x="20" y="80"><tspan class="label">OS</tspan>...................... Fedora Linux</text>
-<text x="20" y="111"><tspan class="label">Uptime</tspan>.................. 20y 0m 6d</text>
-<text x="20" y="142"><tspan class="label">Status</tspan>.................. alive</text>
-<text x="20" y="173"><tspan class="label">College</tspan>................. IIT Madras</text>
-<text x="20" y="204"><tspan class="label">IDE</tspan>..................... VS Code • Neovim</text>
-<text x="20" y="235"><tspan class="label">Stack</tspan>................... Python • Java • JavaScript</text>
-<text x="295" y="266">Vue • HTML • CSS • SQL</text>
-<text x="20" y="297"><tspan class="label">Learning</tspan>................ Machine Learning</text>
-<text x="295" y="328">System Design</text>
-<text x="20" y="359"><tspan class="label">GitHub</tspan>.................. @Deepanshu-Monocoder</text>
-<text x="20" y="390"><tspan class="label">LinkedIn</tspan>................ /in/deepanshu-</text>
-<text x="295" y="421">kumar-monocoder</text>
-<text x="20" y="452"><tspan class="label">X</tspan>....................... @Deepanshu_CODE</text>
-<text x="20" y="483"><tspan class="label">Hashnode</tspan>................ @Deepanshu-Kumar</text>
+<text x="20" y="60">──────────────────────────────────────────────────────</text>
+<text x="20" y="82"><tspan class="label">OS</tspan>.................... Fedora Linux</text>
+<text x="20" y="112"><tspan class="label">Uptime</tspan>................ 20y 0m 6d</text>
+<text x="20" y="142"><tspan class="label">Status</tspan>................ alive</text>
+<text x="20" y="172"><tspan class="label">College</tspan>............... IIT Madras</text>
+<text x="20" y="202"><tspan class="label">IDE</tspan>................... VS Code • Neovim</text>
+<text x="20" y="232"><tspan class="label">Stack</tspan>................. Python • Java • JavaScript</text>
+<text x="235" y="262">Vue • HTML • CSS • SQL</text>
+<text x="20" y="292"><tspan class="label">Learning</tspan>.............. Machine Learning</text>
+<text x="235" y="322">System Design</text>
+<text x="20" y="352"><tspan class="label">GitHub</tspan>................ @Deepanshu-Monocoder</text>
+<text x="20" y="382"><tspan class="label">LinkedIn</tspan>.............. /in/deepanshu-</text>
+<text x="235" y="412">kumar-monocoder</text>
+<text x="20" y="442"><tspan class="label">X</tspan>..................... @Deepanshu_CODE</text>
+<text x="20" y="472"><tspan class="label">Hashnode</tspan>.............. @Deepanshu-Kumar</text>
 </svg>

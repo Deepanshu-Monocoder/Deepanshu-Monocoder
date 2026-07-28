@@ -21,7 +21,7 @@ uptime = f"{age.years}y {age.months}m {age.days}d"
 BACKGROUND = "#0d1117"
 TEXT = "#c9d1d9"
 GREEN = "#3fb950"
-ORANGE = "#d29922"
+ORANGE = "#58a6ff"
 
 FONT_SIZE = 16
 LINE_HEIGHT = 25
@@ -46,14 +46,6 @@ rows = [
     ("X", "@Deepanshu_CODE"),
     ("Hashnode", "@Deepanshu-Kumar"),
 ]
-
-
-def make_row(label, value):
-    if label == "":
-        return " " * 25 + value
-
-    dots = "." * max(2, 24 - len(label))
-    return f"{label}{dots} {value}"
 
 # ----------------------------------------------------
 # Build SVG
@@ -81,12 +73,14 @@ text {{
 
 .label {{
     fill:{ORANGE};
+    font-weight:bold;
 }}
 </style>
 
 <text x="20" y="35" class="username">Deepanshu-Monocoder@github</text>
-<text x="20" y="60">─────────────────────────────────────────────────────────</text>
+<text x="20" y="60">────────────────────────────────────────────────────────────────────────────</text>
 """
+
 y = 95
 
 for label, value in rows:
@@ -95,7 +89,6 @@ for label, value in rows:
         svg += f'<text x="295" y="{y}">{value}</text>\n'
 
     else:
-
         dots = "." * max(2, 24 - len(label))
 
         svg += (
@@ -109,6 +102,6 @@ for label, value in rows:
 
 svg += "</svg>"
 
-OUTPUT.write_text(svg)
+OUTPUT.write_text(svg, encoding="utf-8")
 
 print("Info card created successfully!")

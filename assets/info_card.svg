@@ -17,12 +17,13 @@ text {
 }
 
 .label {
-    fill:#d29922;
+    fill:#58a6ff;
+    font-weight:bold;
 }
 </style>
 
 <text x="20" y="35" class="username">Deepanshu-Monocoder@github</text>
-<text x="20" y="60">─────────────────────────────────────────────────────────</text>
+<text x="20" y="60">────────────────────────────────────────────────────────────────────────────</text>
 <text x="20" y="95"><tspan class="label">OS</tspan>...................... Fedora Linux</text>
 <text x="20" y="120"><tspan class="label">Uptime</tspan>.................. 20y 0m 6d</text>
 <text x="20" y="145"><tspan class="label">Status</tspan>.................. alive</text>

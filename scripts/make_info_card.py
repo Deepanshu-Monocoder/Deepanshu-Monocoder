@@ -26,7 +26,7 @@ BLUE = "#58a6ff"
 FONT_SIZE = 19
 LINE_HEIGHT = 30
 
-SVG_WIDTH = 560
+SVG_WIDTH = 680
 
 # ----------------------------------------------------
 # Data
@@ -80,7 +80,7 @@ text {{
 </style>
 
 <text x="20" y="35" class="username">Deepanshu-Monocoder@github</text>
-<text x="20" y="60">──────────────────────────────────────────────────────</text>
+<text x="20" y="60">────────────────────────────────────────────────────────────────────</text>
 """
 
 y = 82
@@ -88,7 +88,7 @@ y = 82
 for label, value in rows:
 
     if label == "":
-        svg += f'<text x="235" y="{y}">{value}</text>\n'
+        svg += f'<text x="250" y="{y}">{value}</text>\n'
 
     else:
         dots = "." * max(2, 22 - len(label))

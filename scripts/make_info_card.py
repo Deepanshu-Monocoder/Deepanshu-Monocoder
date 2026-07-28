@@ -23,8 +23,8 @@ TEXT = "#c9d1d9"
 GREEN = "#3fb950"
 ORANGE = "#58a6ff"
 
-FONT_SIZE = 16
-LINE_HEIGHT = 25
+FONT_SIZE = 18
+LINE_HEIGHT = 28
 
 # ----------------------------------------------------
 # Data
@@ -51,7 +51,7 @@ rows = [
 # Build SVG
 # ----------------------------------------------------
 
-height = 130 + len(rows) * LINE_HEIGHT
+height = 110 + len(rows) * LINE_HEIGHT
 
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg"
 width="760"
@@ -81,7 +81,7 @@ text {{
 <text x="20" y="60">────────────────────────────────────────────────────────────────────────────</text>
 """
 
-y = 95
+y = 80
 
 for label, value in rows:
 

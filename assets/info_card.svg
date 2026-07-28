@@ -1,23 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="220">
+<svg xmlns="http://www.w3.org/2000/svg"
+width="760"
+height="480">
+
 <rect width="100%" height="100%" fill="#0d1117"/>
 
 <style>
-text{
-font-family:monospace;
-font-size:16px;
-fill:#c9d1d9;
+text {
+    font-family: monospace;
+    font-size:16px;
+    fill:#c9d1d9;
 }
-.green{fill:#3fb950;}
-.blue{fill:#58a6ff;}
+
+.username {
+    fill:#3fb950;
+    font-weight:bold;
+}
+
+.label {
+    fill:#d29922;
+}
 </style>
 
-<text x="20" y="35" class="green">deepanshu@github</text>
-<text x="20" y="60">---------------------------</text>
-
-<text x="20" y="90"><tspan class="blue">OS:</tspan> Fedora Linux</text>
-<text x="20" y="115"><tspan class="blue">Editor:</tspan> VS Code</text>
-<text x="20" y="140"><tspan class="blue">Languages:</tspan> Python, JS</text>
-<text x="20" y="165"><tspan class="blue">Focus:</tspan> AI • Full Stack</text>
-<text x="20" y="190"><tspan class="blue">GitHub:</tspan> Deepanshu-Monocoder</text>
-
+<text x="20" y="35" class="username">Deepanshu-Monocoder@github</text>
+<text x="20" y="60">─────────────────────────────────────────────────────────</text>
+<text x="20" y="95"><tspan class="label">OS</tspan>...................... Fedora Linux</text>
+<text x="20" y="120"><tspan class="label">Uptime</tspan>.................. 20y 0m 6d</text>
+<text x="20" y="145"><tspan class="label">Status</tspan>.................. alive</text>
+<text x="20" y="170"><tspan class="label">College</tspan>................. IIT Madras</text>
+<text x="20" y="195"><tspan class="label">IDE</tspan>..................... VS Code • Neovim</text>
+<text x="20" y="220"><tspan class="label">Stack</tspan>................... Python • Java • JavaScript</text>
+<text x="295" y="245">Vue • HTML • CSS • SQL</text>
+<text x="20" y="270"><tspan class="label">Learning</tspan>................ Machine Learning</text>
+<text x="295" y="295">System Design</text>
+<text x="20" y="320"><tspan class="label">GitHub</tspan>.................. @Deepanshu-Monocoder</text>
+<text x="20" y="345"><tspan class="label">LinkedIn</tspan>................ /in/deepanshu-</text>
+<text x="295" y="370">kumar-monocoder</text>
+<text x="20" y="395"><tspan class="label">X</tspan>....................... @Deepanshu_CODE</text>
+<text x="20" y="420"><tspan class="label">Hashnode</tspan>................ @Deepanshu-Kumar</text>
 </svg>

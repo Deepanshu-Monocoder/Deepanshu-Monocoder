@@ -1,32 +1,114 @@
 from pathlib import Path
+from datetime import date
+from dateutil.relativedelta import relativedelta
 
 OUTPUT = Path("assets/info_card.svg")
 
-svg = """<svg xmlns="http://www.w3.org/2000/svg" width="420" height="220">
-<rect width="100%" height="100%" fill="#0d1117"/>
+# ----------------------------------------------------
+# Dynamic Uptime
+# ----------------------------------------------------
+
+birth = date(2006, 7, 23)
+today = date.today()
+
+age = relativedelta(today, birth)
+uptime = f"{age.years}y {age.months}m {age.days}d"
+
+# ----------------------------------------------------
+# Theme
+# ----------------------------------------------------
+
+BACKGROUND = "#0d1117"
+TEXT = "#c9d1d9"
+GREEN = "#3fb950"
+ORANGE = "#d29922"
+
+FONT_SIZE = 16
+LINE_HEIGHT = 25
+
+# ----------------------------------------------------
+# Data
+# ----------------------------------------------------
+
+rows = [
+    ("OS", "Fedora Linux"),
+    ("Uptime", uptime),
+    ("Status", "alive"),
+    ("College", "IIT Madras"),
+    ("IDE", "VS Code • Neovim"),
+    ("Stack", "Python • Java • JavaScript"),
+    ("", "Vue • HTML • CSS • SQL"),
+    ("Learning", "Machine Learning"),
+    ("", "System Design"),
+    ("GitHub", "@Deepanshu-Monocoder"),
+    ("LinkedIn", "/in/deepanshu-"),
+    ("", "kumar-monocoder"),
+    ("X", "@Deepanshu_CODE"),
+    ("Hashnode", "@Deepanshu-Kumar"),
+]
+
+
+def make_row(label, value):
+    if label == "":
+        return " " * 25 + value
+
+    dots = "." * max(2, 24 - len(label))
+    return f"{label}{dots} {value}"
+
+# ----------------------------------------------------
+# Build SVG
+# ----------------------------------------------------
+
+height = 130 + len(rows) * LINE_HEIGHT
+
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg"
+width="760"
+height="{height}">
+
+<rect width="100%" height="100%" fill="{BACKGROUND}"/>
 
 <style>
-text{
-font-family:monospace;
-font-size:16px;
-fill:#c9d1d9;
-}
-.green{fill:#3fb950;}
-.blue{fill:#58a6ff;}
+text {{
+    font-family: monospace;
+    font-size:{FONT_SIZE}px;
+    fill:{TEXT};
+}}
+
+.username {{
+    fill:{GREEN};
+    font-weight:bold;
+}}
+
+.label {{
+    fill:{ORANGE};
+}}
 </style>
 
-<text x="20" y="35" class="green">deepanshu@github</text>
-<text x="20" y="60">---------------------------</text>
-
-<text x="20" y="90"><tspan class="blue">OS:</tspan> Fedora Linux</text>
-<text x="20" y="115"><tspan class="blue">Editor:</tspan> VS Code</text>
-<text x="20" y="140"><tspan class="blue">Languages:</tspan> Python, JS</text>
-<text x="20" y="165"><tspan class="blue">Focus:</tspan> AI • Full Stack</text>
-<text x="20" y="190"><tspan class="blue">GitHub:</tspan> Deepanshu-Monocoder</text>
-
-</svg>
+<text x="20" y="35" class="username">Deepanshu-Monocoder@github</text>
+<text x="20" y="60">─────────────────────────────────────────────────────────</text>
 """
+y = 95
+
+for label, value in rows:
+
+    if label == "":
+        svg += f'<text x="295" y="{y}">{value}</text>\n'
+
+    else:
+
+        dots = "." * max(2, 24 - len(label))
+
+        svg += (
+            f'<text x="20" y="{y}">'
+            f'<tspan class="label">{label}</tspan>'
+            f'{dots} {value}'
+            f'</text>\n'
+        )
+
+    y += LINE_HEIGHT
+
+svg += "</svg>"
 
 OUTPUT.write_text(svg)
 
-print("Info card created!")
+print("Info card created successfully!")

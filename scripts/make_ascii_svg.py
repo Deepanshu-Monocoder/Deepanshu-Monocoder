@@ -65,13 +65,38 @@ fill="{FOREGROUND}"
 xml:space="preserve">
 '''
 
+    duration = 10.0
+    delay = duration / max(len(lines), 1)
+
     for i, line in enumerate(lines):
         y = (i + 1) * LINE_HEIGHT
-        svg += f'<text x="0" y="{y}">{html.escape(line)}</text>\n'
+        begin = round(i * delay, 2)
+
+        svg += f'''
+<text x="0" y="{y}" opacity="0">{html.escape(line)}
+<animate
+attributeName="opacity"
+from="0"
+to="1"
+begin="{begin}s"
+dur="0.05s"
+fill="freeze"/>
+</text>
+'''
+
+    svg += """
+<animate
+attributeName="opacity"
+from="1"
+to="1"
+begin="0s"
+dur="10s"
+repeatCount="indefinite"/>
+"""
 
     svg += "</g></svg>"
 
-    OUTPUT.write_text(svg)
+    OUTPUT.write_text(svg, encoding="utf-8")
 
 
 if __name__ == "__main__":

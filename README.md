@@ -15,7 +15,7 @@ Building software, learning AI, and documenting the journey.
 
 <td width="55%" align="center">
 
-<img src="assets/info_card.svg" alt="Info Card" width="100%">
+<img src="./assets/info_card.svg?cache=2" alt="Info Card" width="100%">
 
 </td>
 

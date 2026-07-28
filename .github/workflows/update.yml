@@ -23,7 +23,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r scripts/requirements.txt
+        run: 
+          pip install -r scripts/requirements.txt
+          pip install "rembg[cpu]"
 
       - name: Generate assets
         run: |

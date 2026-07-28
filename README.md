@@ -1,17 +1,21 @@
-# Hi, I'm Deepanshu 👋
+<h1 align="center">Hi 👋, I'm Deepanshu</h1>
 
-<table>
+<p align="center">
+Building software, learning AI, and documenting the journey.
+</p>
+
+<table align="center">
 <tr>
 
-<td width="45%">
+<td width="45%" align="center">
 
-<img src="assets/avi-ascii.svg" width="100%"/>
+<img src="assets/avi-ascii.svg" alt="ASCII Portrait" width="100%">
 
 </td>
 
-<td width="55%">
+<td width="55%" align="center">
 
-<img src="assets/info_card.svg" width="100%"/>
+<img src="assets/info_card.svg" alt="Info Card" width="100%">
 
 </td>
 
@@ -20,23 +24,13 @@
 
 ---
 
-## Tech Stack
+# 🚀 Featured Projects
 
-- Python
-- Java
-- Flutter
-- Supabase
-- HTML/CSS/JS
+> Coming soon...
 
 ---
 
-## Currently Working On
-
-- AI
-- Full Stack Development
-- IIT Madras BS Degree
-- Open Source
-
----
-
-⭐ Thanks for visiting my profile!
+<p align="center">
+Thanks for stopping by ⭐<br>
+Follow my journey as I build software, explore AI, and share what I learn.
+</p>

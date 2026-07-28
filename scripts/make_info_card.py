@@ -23,8 +23,9 @@ TEXT = "#c9d1d9"
 GREEN = "#3fb950"
 ORANGE = "#58a6ff"
 
-FONT_SIZE = 18
-LINE_HEIGHT = 28
+FONT_SIZE = 20
+LINE_HEIGHT = 31
+width="680"
 
 # ----------------------------------------------------
 # Data

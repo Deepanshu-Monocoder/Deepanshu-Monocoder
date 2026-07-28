@@ -9,7 +9,7 @@
 
 <td align="center">
 
-<img src="assets/info_card.svg?cache=2" alt="Info Card" width="620">
+<img src="assets/info_card.svg?cache=2" width="700">
 
 </td>
 
